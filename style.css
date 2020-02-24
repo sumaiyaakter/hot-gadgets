@@ -1,0 +1,319 @@
+/* ---------------------------------------------- /*
+* 01. Reset CSS
+/* ---------------------------------------------- */
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+    color: #000000;
+  }
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 0;
+}
+button {
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background: 0;
+}
+
+button:focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+span {
+    display: inline-block;
+}
+
+section {
+position: relative;
+}
+
+
+/* ---------------------------------------------- /*
+* 02. Typography Css
+/* ---------------------------------------------- */
+h1, h2, h3, h4, h5, h6{
+    color: #1F1F1F;
+    font-weight: 500;
+}
+h1{
+    font-size: 41px;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #707070;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------------- /*
+* 03. Common Css
+/* ---------------------------------------------- */
+a, .btn, .card, .card img, .carousel-indicators li{
+    transition: .5s;
+}
+.btn{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+    background-color: #000000;
+    padding: 14px 31px 14px 27px;
+}
+.btn:hover{
+    color: rgba(255, 255, 255, .8);
+}
+.section-title{
+    padding-bottom: 90px;
+}
+.section-title hr{
+    height: 10px;
+    width: 135px;
+    border: 0;
+    margin: 0 auto;
+    border-radius: 18px;
+    margin-top: 15px;
+    border: 0;
+    background-image: linear-gradient(45deg, #FF9C35, #FFD019);
+}
+
+/* ---------------------------------------------- /*
+* 04. Header Css
+/* ---------------------------------------------- */
+.header{
+    padding: 40px 0;
+}
+.navbar{
+    z-index: 1;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-size: 18px;
+    font-weight: 500;
+    color: #707070;
+    text-transform: capitalize;
+    padding: 10px 25px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #000000;
+}
+
+/* ---------------------------------------------- /*
+* 05. Hero Css
+/* ---------------------------------------------- */
+.hero{
+    background-image: url(images/banner-products/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 150px;
+    margin-top: -95px;
+}
+.carousel-item h1{
+    margin-bottom: 30px;
+}
+.carousel-item p{
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 35px;
+}
+.carousel-img {
+    height: 790px;
+}
+.carousel-img img {
+    height: 100%;
+    float: right;
+}
+
+.carousel-indicators li {
+    border-radius: 50px;
+    opacity: 1;
+    background-color: #CECECE;
+    width: 16px;
+    height: 12px;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+.carousel-indicators .active {
+    background-image: linear-gradient(45deg, #FF9C35, #FFD019);
+    width: 45px;
+}
+
+
+/* ---------------------------------------------- /*
+* 06. Card CSS
+/* ---------------------------------------------- */
+.card-deck .card {
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+    border: 0;
+    text-align: center;
+    padding: 60px 50px 54px;
+    border-radius: 21px;
+    cursor: grab;
+}
+.card:hover {
+    box-shadow: 0 20px 20px -20px rgba(0,0,0,0.25);
+}
+.card img {
+    margin-bottom: 18px;
+    transform: scale(1.1)
+}
+.card:hover img {
+    transform: scale(1);
+}
+.card-title {
+    margin-bottom: 14px;
+}
+.card-text {
+    margin-bottom: 40px;
+}
+.price {
+    margin-bottom: 5px;
+}
+.card-footer {
+    border: 0;
+    background: #ffffff;
+    padding: 0;
+}
+
+/* ---------------------------------------------- /*
+* 07. Product CSS
+/* ---------------------------------------------- */
+.product-title {
+    margin-bottom: 35px;
+    text-transform: capitalize;
+}
+.product-title a {
+    color: #FF9D00;
+    font-size: 22px;
+    font-weight: 500;
+}
+.product-title a:hover{
+    color: #FFCF1A;
+}
+.product-1{
+    padding-bottom: 100px;
+}
+.product-2{
+    padding-bottom: 210px;
+}
+
+/* ---------------------------------------------- /*
+* 08. Categories CSS
+/* ---------------------------------------------- */
+.categories{
+    padding-bottom: 120px;
+}
+.categories-card{
+    background-color: #ffffff;
+    box-shadow: 0 6px 64px rgba(0, 0, 0, .15);
+    text-align: center;
+    padding: 58px 62px;
+    border-radius: 5px;
+}
+.categories-card img{
+    margin-bottom: 35px;
+}
+.categories-card--left .categories-card{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 40px;
+}
+.categories-card--right .categories-card{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+}
+
+/* ---------------------------------------------- /*
+* 09. Product List CSS
+/* ---------------------------------------------- */
+.product-list{
+    padding-bottom: 120px;
+}
+.widget-title{
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+   position: relative;
+}
+.widget-title::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 0;
+    bottom: -8px;
+    background-color: #000000;
+    z-index: -1;
+}
+.widget-img{
+    width: 80px;
+    height: 80px;
+    background: #F6F6F6;
+    padding: 10px 8px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.widget-img img {
+    width: 100%;
+}
+.widget li{
+    margin-bottom: 20px;
+}
+.widget h4 a{
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #5F5F5F;
+    font-weight: 500;
+}
+.widget h4 a:hover{
+    color: #000000;
+}
+.widget .price{
+    color: #5F5F5F;
+    font-size: 16px;
+}
+
+/* ---------------------------------------------- /*
+* 10. Footer CSS
+/* ---------------------------------------------- */
+.footer-wrapper{
+    padding: 40px 0;
+    border-top: 1px solid #E0E0E0;
+}
+.copyright{
+    color: #000000;
+}
